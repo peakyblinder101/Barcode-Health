@@ -17,9 +17,9 @@ app.use(bodyParser.json());
 // MySQL Connection
 const db = mysql.createConnection({
     host: 'localhost',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || '#00ReyMar16..',
-    database: process.env.DB_NAME || 'mydb',
+    user: process.env.DB_USER || 'username sa db',
+    password: process.env.DB_PASSWORD || 'yourpassword sa db',
+    database: process.env.DB_NAME || 'name sa db',
 });
 
 db.connect(err => {
